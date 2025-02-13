@@ -1,44 +1,32 @@
 /* General Layout */
-body {
-    font-family: Arial, sans-serif;
+  body {
+    font-family:'Courier New', Courier, monospace;
     background-color: #fef0f0;
     margin: 0;
     padding: 0;
     text-align: center;
+    margin-top: 50px;
   }
 
-  /* Smooth Scrolling */
+/* Smooth Scrolling */
   html {
   scroll-behavior: smooth;
   }
 
-  /* Initial State for Sections */
+/* Initial State for Sections */
   .section {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.7s ease, transform 0.7s ease;
   }
 
-  /* Animated State */
+/* Animated State */
   .section-visible {
   opacity: 1;
   transform: translateY(0);
   }
 
-  /*Introduction Section*/
-  .introduction h1 {
-    font-size: 2rem;
-    color: #ff0066;
-    margin-top: 20px;
-  }
-  .introduction p {
-    font-size: 1.2rem;
-    color: #333;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* Greeting Section */
+/* Greeting Section */
   .greeting h1 {
   font-size: 2rem;
   color: #ff0066;
@@ -51,7 +39,20 @@ body {
   margin: 0 auto;
   }
 
-  /* About Us Section */
+/*Introduction Section*/
+  .introduction h1 {
+  font-size: 2rem;
+  color: #ff0066;
+  margin-top: 20px;
+  }
+  .introduction p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  }
+
+/* About Us Section */
   .about-us h2 {
   font-size: 1.8rem;
   color: #ff0066;
@@ -63,7 +64,7 @@ body {
   margin: 20px auto;
   }
 
-  /* Why I Love You Section */
+/* Why I Love You Section */
   .why-i-love-you h2 {
   font-size: 1.8rem;
   color: #ff0066;
@@ -78,7 +79,7 @@ body {
   margin: 10px 0;
   }
 
-  /* Future Plans Section */
+/* Future Plans Section */
   .future-plans h2 {
   font-size: 1.8rem;
   color: #ff0066;
@@ -90,7 +91,30 @@ body {
   margin: 20px auto;
   }
   
-  /* Slideshow container */
+/* Image container to center images */
+  .image-container {
+  display: flex;
+  justify-content: center; /* Center images */
+  gap: 20px; /* Space between images */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 30px; /* Space from the top */
+  }
+
+  /* Style each image */
+  .styled-image {
+  width: 500px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth effect */
+  }
+
+  /* Add hover effect */
+  .styled-image:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+/* Slideshow container */
   .slideshow-container {
   position: relative;
   max-width: 100%;
@@ -98,21 +122,21 @@ body {
   overflow: hidden;
   }
 
-  /* Hide all slides initially */
+/* Hide all slides initially */
   .slide {
   display: none;
   position: relative;
   }
 
-  /* Make images fit within the container */
+/* Make images fit within the container */
   .slide img {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
   object-fit: cover;
   border-radius: 10px;
   }
 
-  /* Caption text inside the image */
+/* Caption text inside the image */
   .caption {
   position: absolute;
   bottom: 10%;
@@ -121,15 +145,15 @@ body {
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   color: white;
   padding: 10px 20px;
-  font-size: 1.5em;
+  font-size: 1.0em;
   border-radius: 5px;
   text-align: center;
   opacity: 0.8; /* Slightly faded effect */
   }
 
-  /* Fade animation */
+/* Fade animation */
   .fade {
-  animation: fadeEffect 5s ease-in-out;
+  animation: fadeEffect 3s ease-in-out;
   }
 
   @keyframes fadeEffect {
@@ -137,7 +161,7 @@ body {
   to { opacity: 1; }
   }
   
-  /* QR Code Section */
+/* QR Code Section */
   .qr-section {
     margin: 50px auto;
   }
@@ -154,7 +178,7 @@ body {
     transform: scale(1.1);
   }
   
-  /* Floating Hearts */
+/* Floating Hearts */
   @keyframes float {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(-20px); opacity: 0; }
@@ -178,7 +202,7 @@ body {
     animation-duration: 6s;
   }
   
-  /* Love Meter */
+/* Love Meter */
   .love-meter {
     width: 80%;
     background-color: #eee;
