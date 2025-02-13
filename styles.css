@@ -6,32 +6,6 @@
     margin-bottom: 60px;
     padding: 0;
     text-align: center;
-    max-width: 80%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-  }
-
-/* Adjust text size on small screens */
-  @media (max-width: 200px) {
-  .text-container {
-    font-size: 0.7em; /* Reduce font size slightly */
-    padding: 10px; /* Add padding for better spacing */
-    }
-
-  .playlist-section {
-    width: 80%; /* Ensure content doesn’t overflow */
-    text-align: center;
-    }
-
-  .playlist-link {
-    font-size: 16px; /* Reduce button size */
-    padding: 10px 15px;
-    }
-
-  /* Adjust images in the slideshow */
-  .slideshow img {
-    width: 100%; /* Make images responsive */
-    height: 100%; /* Maintain aspect ratio */
-    }
   }
 
 /* Smooth Scrolling */
