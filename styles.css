@@ -3,22 +3,22 @@
     font-family:'Courier New', Courier, monospace;
     background-color: #fef0f0;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     padding: 0;
     text-align: center;
-    max-width: 100%;
+    max-width: 80%;
     overflow-x: hidden; /* Prevents horizontal scrolling */
   }
 
 /* Adjust text size on small screens */
-  @media (max-width: 500px) {
+  @media (max-width: 200px) {
   .text-container {
-    font-size: 1em; /* Reduce font size slightly */
+    font-size: 0.7em; /* Reduce font size slightly */
     padding: 10px; /* Add padding for better spacing */
     }
 
   .playlist-section {
-    width: 90%; /* Ensure content doesn’t overflow */
+    width: 80%; /* Ensure content doesn’t overflow */
     text-align: center;
     }
 
@@ -29,8 +29,8 @@
 
   /* Adjust images in the slideshow */
   .slideshow img {
-    width: 70%; /* Make images responsive */
-    height: 70%; /* Maintain aspect ratio */
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Maintain aspect ratio */
     }
   }
 
@@ -185,23 +185,6 @@
   @keyframes fadeEffect {
   from { opacity: 0.4; }
   to { opacity: 1; }
-  }
-  
-/* QR Code Section */
-  .qr-section {
-    margin: 50px auto;
-  }
-  .qr-section h2 {
-    font-size: 1.5rem;
-    color: #ff0066;
-  }
-  .qr-code {
-    width: 150px;
-    margin-top: 20px;
-    transition: transform 0.3s ease;
-  }
-  .qr-code:hover {
-    transform: scale(1.1);
   }
 
   .playlist-section {
