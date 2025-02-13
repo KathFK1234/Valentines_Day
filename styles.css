@@ -6,6 +6,58 @@ body {
     padding: 0;
     text-align: center;
   }
+
+  /* Greeting Section */
+  .greeting h1 {
+  font-size: 2rem;
+  color: #ff0066;
+  margin-top: 20px;
+  }
+  .greeting p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  }
+
+  /* About Us Section */
+  .about-us h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+  }
+  .about-us p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 20px auto;
+  }
+
+  /* Why I Love You Section */
+  .why-i-love-you h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+  }
+  .why-i-love-you ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+  }
+  .why-i-love-you li {
+  margin: 10px 0;
+  }
+
+  /* Future Plans Section */
+  .future-plans h2 {
+  font-size: 1.8rem;
+  color: #ff0066;
+  }
+  .future-plans p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 20px auto;
+  }
   
   /* Carousel */
   .carousel-container {
