@@ -90,36 +90,51 @@ body {
   margin: 20px auto;
   }
   
-  /* Carousel */
-  .carousel-container {
-    width: 80%;
-    margin: 50px auto;
-    overflow: hidden;
-    position: relative;
+  /* Slideshow container */
+  .slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
   }
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease;
+
+  /* Hide all slides initially */
+  .slide {
+  display: none;
+  position: relative;
   }
-  .carousel img {
-    width: 100%;
-    height: auto;
+
+  /* Make images fit within the container */
+  .slide img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
   }
-  .carousel-nav {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+  /* Caption text inside the image */
+  .caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.8; /* Slightly faded effect */
   }
-  .nav-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
+
+  /* Fade animation */
+  .fade {
+  animation: fadeEffect 5s ease-in-out;
+  }
+
+  @keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
   }
   
   /* QR Code Section */

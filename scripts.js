@@ -17,26 +17,28 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-// Carousel Logic
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-const carousel = document.querySelector(".carousel");
-let index = 0;
+// Slideshow Logic
+let slideIndex = 0;
 
-prevButton.addEventListener("click", () => {
-  index = (index > 0) ? index - 1 : carousel.children.length - 1;
-  updateCarousel();
-});
-
-nextButton.addEventListener("click", () => {
-  index = (index < carousel.children.length - 1) ? index + 1 : 0;
-  updateCarousel();
-});
-
-function updateCarousel() {
-  const offset = -index * 100;
-  carousel.style.transform = `translateX(${offset}%)`;
+function showSlides() {
+  let slides = document.querySelectorAll(".slide");
+  
+  // Hide all slides
+  slides.forEach(slide => slide.style.display = "none");
+  
+  // Move to the next slide
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; } // Loop back to first slide
+  
+  // Show the current slide
+  slides[slideIndex - 1].style.display = "block";
+  
+  // Change slide every 10 seconds
+  setTimeout(showSlides, 10000);
 }
+
+// Start the slideshow when the page loads
+document.addEventListener("DOMContentLoaded", showSlides);
 
 // Love Meter Logic
 let loveLevel = 0;
