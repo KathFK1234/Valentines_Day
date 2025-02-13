@@ -11,7 +11,7 @@
   }
 
 /* Adjust text size on small screens */
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
   .text-container {
     font-size: 1em; /* Reduce font size slightly */
     padding: 10px; /* Add padding for better spacing */
@@ -29,8 +29,8 @@
 
   /* Adjust images in the slideshow */
   .slideshow img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 70%; /* Make images responsive */
+    height: 70%; /* Maintain aspect ratio */
     }
   }
 
