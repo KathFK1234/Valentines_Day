@@ -39,13 +39,3 @@ function showSlides() {
 
 // Start the slideshow when the page loads
 document.addEventListener("DOMContentLoaded", showSlides);
-
-// Love Meter Logic
-let loveLevel = 0;
-document.body.addEventListener("click", () => {
-  if (loveLevel < 100) {
-    loveLevel += 10;
-    document.getElementById("loveMeter").style.width = loveLevel + "%";
-    document.getElementById("loveMeter").textContent = loveLevel + "%";
-  }
-});

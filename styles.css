@@ -2,10 +2,10 @@
   body {
     font-family:'Courier New', Courier, monospace;
     background-color: #fef0f0;
-    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 0;
     text-align: center;
-    margin-top: 50px;
   }
 
 /* Smooth Scrolling */
@@ -177,44 +177,25 @@
   .qr-code:hover {
     transform: scale(1.1);
   }
-  
-/* Floating Hearts */
-  @keyframes float {
-    0% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(-20px); opacity: 0; }
-  }
-  .heart {
-    position: absolute;
-    color: red;
-    font-size: 2rem;
-    animation: float 3s infinite;
-  }
-  .heart:nth-child(1) {
-    left: 20%;
-    animation-duration: 4s;
-  }
-  .heart:nth-child(2) {
-    left: 50%;
-    animation-duration: 5s;
-  }
-  .heart:nth-child(3) {
-    left: 80%;
-    animation-duration: 6s;
-  }
-  
-/* Love Meter */
-  .love-meter {
-    width: 80%;
-    background-color: #eee;
-    margin: 50px auto;
-  }
-  .love-meter-bar {
-    width: 0;
-    height: 30px;
-    background-color: pink;
+
+  .playlist-section {
     text-align: center;
-    line-height: 30px;
-    color: white;
-    font-weight: bold;
+    margin-top: 50px;
   }
 
+  .playlist-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #1DB954; /* Spotify green */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .playlist-link:hover {
+    background: #1AA34A; /* Darker green on hover */
+    transform: scale(1.1);
+  }
