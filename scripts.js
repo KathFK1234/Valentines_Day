@@ -1,3 +1,22 @@
+// Select all sections
+const sections = document.querySelectorAll('.section');
+
+// Intersection Observer to detect when the sections are in view
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Add 'section-visible' class when the section comes into view
+      entry.target.classList.add('section-visible');
+      observer.unobserve(entry.target); // Stop observing once the section is in view
+    }
+  });
+}, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+// Observe each section
+sections.forEach(section => {
+  observer.observe(section);
+});
+
 // Carousel Logic
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");

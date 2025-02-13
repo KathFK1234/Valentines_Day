@@ -7,6 +7,37 @@ body {
     text-align: center;
   }
 
+  /* Smooth Scrolling */
+  html {
+  scroll-behavior: smooth;
+  }
+
+  /* Initial State for Sections */
+  .section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* Animated State */
+  .section-visible {
+  opacity: 1;
+  transform: translateY(0);
+  }
+
+  /*Introduction Section*/
+  .introduction h1 {
+    font-size: 2rem;
+    color: #ff0066;
+    margin-top: 20px;
+  }
+  .introduction p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   /* Greeting Section */
   .greeting h1 {
   font-size: 2rem;
@@ -147,4 +178,4 @@ body {
     color: white;
     font-weight: bold;
   }
-  
+
